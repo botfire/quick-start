@@ -2,7 +2,8 @@
 use webrium\core\Route;
 
 
-Route::get('','indexController->index');
+Route::get('webhook/set','indexController->setwebhook');
 
+Route::any('run','indexController->run');
 
 Route::notFound();
