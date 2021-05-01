@@ -1,9 +1,9 @@
 {
-  "name": "webrium/webrium",
-  "description": "PHP Micro Framework",
+  "name": "botfire/quick-start",
+  "description": "Quick Start Telegram Bot",
   "type": "project",
   "require": {
-    "php": ">=7.0.0 <8",
+    "php": ">=7.0.0",
     "botfire/botfire": "*@stable",
     "webrium/foxql": "^1.0.0",
     "webrium/core": "^0.2.0",
