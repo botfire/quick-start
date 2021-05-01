@@ -1,0 +1,27 @@
+{
+  "name": "webrium/webrium",
+  "description": "PHP Micro Framework",
+  "type": "project",
+  "require": {
+    "php": ">=7.0.0 <8",
+    "botfire/botfire": "*@stable",
+    "webrium/foxql": "^1.0.0",
+    "webrium/core": "^0.2.0",
+    "phpmailer/phpmailer": "~6.1"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "benjamin-khalife",
+      "email": "nvioir@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "scripts": {
+  	"post-create-project-cmd": [
+      "php -r \"chmod( __DIR__ . '/storage/framework/views', 0777);\"",
+      "php -r \"chmod( __DIR__ . '/storage/framework/sessions', 0777);\"",
+  		"php -r \"chmod( __DIR__ . '/storage/logs', 0777);\""
+  	]
+   }
+}
