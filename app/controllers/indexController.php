@@ -22,7 +22,7 @@ class indexController
   | پروژه را روی سرور خود آپلود کنید
   | سپس با توجه به نام دامین خود آدرس زیر را در مرورگر خود اجرا کنید
   |
-  | URL = https://example.com/run
+  | URL = https://example.com/webhook/set
    */
 
 
