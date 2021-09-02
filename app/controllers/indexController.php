@@ -41,7 +41,7 @@ class indexController
   /**
    * زمانی که کاربری در ربات شما عملیاتی انجام میدهد
    * اطلاعات توسط این تابع دریافت و پردازش می شود
-   * و در نهایت پاسخ کاربر ارسال می شود
+   * درخواست ها با توجه به روت ها پاسخ داده می شود
    */
   public function run()
   {
@@ -49,18 +49,21 @@ class indexController
     bot::token($this->token);
     bot::autoInput();
 
+    File::source('routes',['bot.php']);
 
+    $this->firstMessage();
+  }
 
+  public function firstMessage(){
     // ایجاد کیبورد یا همان لینک شیشه ای
     $k = bot::keyboard();
-    $k->btnUrl('کتابخانه بات فایر','https://github.com/botfire/botfire');
-    $k->btnUrl('آدرس کانال یوتیوب','https://www.youtube.com/channel/UCN0h9VCzj7qZjMZVhZKF8wg');
-    $k->row();
+    $k->btnUrl('کتابخانه بات فایر','https://github.com/botfire/botfire')->row();
+    $k->btnUrl('آدرس کانال یوتیوب','https://www.youtube.com/channel/UCN0h9VCzj7qZjMZVhZKF8wg')->row();
+    $k->btn('🔰 Show Alert','alert')->row();
+    $k->btn('🔰 Send Message','message')->row();
 
     // ارسال پیام تست همراه با کیبورد
     bot::this()->message("Hello World \n ربات شما راه اندازی شد ✅")->keyboard($k)->send();
-
-    // code ..
 
   }
 
