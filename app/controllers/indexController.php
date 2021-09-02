@@ -1,5 +1,7 @@
 <?php
 namespace app\controllers;
+
+use webrium\core\File;
 use botfire\botfire\bot;
 
 
@@ -12,7 +14,7 @@ class indexController
   |======================
   | توکن ربات خود را قرار دهید
    */
-  public $token = 'Replace-with-your-robot-token' ;
+  public $token = '240434679:AAHFRl6nPVcf5DLuqi725anNSH3vwLi-71w' ;
 
   /*
   |====================================
@@ -50,21 +52,7 @@ class indexController
     bot::autoInput();
 
     File::source('routes',['bot.php']);
-
-    $this->firstMessage();
   }
 
-  public function firstMessage(){
-    // ایجاد کیبورد یا همان لینک شیشه ای
-    $k = bot::keyboard();
-    $k->btnUrl('کتابخانه بات فایر','https://github.com/botfire/botfire')->row();
-    $k->btnUrl('آدرس کانال یوتیوب','https://www.youtube.com/channel/UCN0h9VCzj7qZjMZVhZKF8wg')->row();
-    $k->btn('🔰 Show Alert','alert')->row();
-    $k->btn('🔰 Send Message','message')->row();
-
-    // ارسال پیام تست همراه با کیبورد
-    bot::this()->message("Hello World \n ربات شما راه اندازی شد ✅")->keyboard($k)->send();
-
-  }
 
 }
