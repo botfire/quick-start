@@ -14,7 +14,7 @@ class indexController
   |======================
   | توکن ربات خود را قرار دهید
    */
-  public $token = '240434679:AAHFRl6nPVcf5DLuqi725anNSH3vwLi-71w' ;
+  public $token = 'Replace-with-your-robot-token' ;
 
   /*
   |====================================
