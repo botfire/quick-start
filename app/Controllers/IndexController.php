@@ -1,20 +1,25 @@
 <?php
-namespace app\controllers;
+namespace App\Controllers;
 
-use webrium\core\File;
 use botfire\botfire\bot;
+use Webrium\File;
 
-
-class indexController
+class IndexController
 {
 
+  public function index()
+  {
+    return view('Welcome', ['name' => 'Webrium Framework']);
+  }
+
+
   /*
-  |======================
-  |     توکن ربات شما
-  |======================
-  | توکن ربات خود را قرار دهید
-   */
-  public $token = 'Replace-with-your-robot-token' ;
+|======================
+|     توکن ربات شما
+|======================
+| توکن ربات خود را قرار دهید
+ */
+  public $token = 'Replace-with-your-robot-token';
 
   /*
   |====================================
@@ -36,7 +41,7 @@ class indexController
   public function setwebhook()
   {
     bot::token($this->token);
-    return bot::webhook()->url( url('run') )->set();
+    return bot::webhook()->url(url('run'))->set();
   }
 
 
@@ -51,8 +56,10 @@ class indexController
     bot::token($this->token);
     bot::autoInput();
 
-    File::source('routes',['bot.php']);
+    bot::this()->message('Updating')->send();
+    File::source('routes', ['Bot.php']);
   }
+
 
 
 }

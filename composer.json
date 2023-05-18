@@ -1,13 +1,13 @@
 {
-  "name": "botfire/quick-start",
-  "description": "Quick Start Telegram Bot",
+  "name": "webrium/webrium",
+  "description": "PHP Framework",
   "type": "project",
   "require": {
-    "php": ">=7.0.0",
+    "php": ">=7.3.0",
     "botfire/botfire": "*@stable",
-    "webrium/foxql": "^1.0.0",
-    "webrium/core": "^0.2.0",
-    "phpmailer/phpmailer": "~6.1"
+    "webrium/core": "^1.0.9",
+    "phpmailer/phpmailer": "~6.1",
+    "webrium/foxdb": "^2.0.0"
   },
   "license": "MIT",
   "authors": [
@@ -16,12 +16,5 @@
       "email": "nvioir@gmail.com"
     }
   ],
-  "minimum-stability": "dev",
-  "scripts": {
-  	"post-create-project-cmd": [
-      "php -r \"chmod( __DIR__ . '/storage/framework/views', 0777);\"",
-      "php -r \"chmod( __DIR__ . '/storage/framework/sessions', 0777);\"",
-  		"php -r \"chmod( __DIR__ . '/storage/logs', 0777);\""
-  	]
-   }
+  "minimum-stability": "dev"
 }

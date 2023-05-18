@@ -1,0 +1,221 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "4402769c84b3f062b4d29e81d6751b0d",
+    "packages": [
+        {
+            "name": "botfire/botfire",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/botfire/botfire.git",
+                "reference": "44132885728dd49165a05d7b0bf905474ad7f08a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/botfire/botfire/zipball/44132885728dd49165a05d7b0bf905474ad7f08a",
+                "reference": "44132885728dd49165a05d7b0bf905474ad7f08a",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "botfire\\botfire\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "benjamin-khalife",
+                    "email": "nvioir@gmail.com"
+                }
+            ],
+            "description": "Telegram Robot Library",
+            "support": {
+                "issues": "https://github.com/botfire/botfire/issues",
+                "source": "https://github.com/botfire/botfire/tree/1.1.3"
+            },
+            "time": "2023-05-18T08:40:19+00:00"
+        },
+        {
+            "name": "phpmailer/phpmailer",
+            "version": "v6.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "df16b615e371d81fb79e506277faea67a1be18f1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/df16b615e371d81fb79e506277faea67a1be18f1",
+                "reference": "df16b615e371d81fb79e506277faea67a1be18f1",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "ext-hash": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.2",
+                "doctrine/annotations": "^1.2.6 || ^1.13.3",
+                "php-parallel-lint/php-console-highlighter": "^1.0.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3.2",
+                "phpcompatibility/php-compatibility": "^9.3.5",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.7.1",
+                "yoast/phpunit-polyfills": "^1.0.4"
+            },
+            "suggest": {
+                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
+                "ext-openssl": "Needed for secure SMTP sending and DKIM signing",
+                "greew/oauth2-azure-provider": "Needed for Microsoft Azure XOAUTH2 authentication",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)",
+                "thenetworg/oauth2-azure": "Needed for Microsoft XOAUTH2 authentication"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "support": {
+                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.8.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Synchro",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-03-06T14:43:22+00:00"
+        },
+        {
+            "name": "webrium/core",
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webrium/core.git",
+                "reference": "01f560ad5a00ce6d1561a5f5ffb0b737a93d5f50"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webrium/core/zipball/01f560ad5a00ce6d1561a5f5ffb0b737a93d5f50",
+                "reference": "01f560ad5a00ce6d1561a5f5ffb0b737a93d5f50",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Webrium\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "benjamin-khalife",
+                    "email": "nvioir@gmail.com"
+                }
+            ],
+            "description": "PHP Framework",
+            "support": {
+                "issues": "https://github.com/webrium/core/issues",
+                "source": "https://github.com/webrium/core/tree/1.0.11"
+            },
+            "time": "2023-03-07T15:47:52+00:00"
+        },
+        {
+            "name": "webrium/foxdb",
+            "version": "2.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/webrium/foxdb.git",
+                "reference": "fe731bb0cdaea9b44cdc49a548b82327dac9bc33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/webrium/foxdb/zipball/fe731bb0cdaea9b44cdc49a548b82327dac9bc33",
+                "reference": "fe731bb0cdaea9b44cdc49a548b82327dac9bc33",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9",
+                "webrium/core": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Foxdb\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "benjamin-khalife",
+                    "email": "nvioir@gmail.com"
+                }
+            ],
+            "description": "Foxdb query builder",
+            "support": {
+                "issues": "https://github.com/webrium/foxdb/issues",
+                "source": "https://github.com/webrium/foxdb/tree/2.0.5"
+            },
+            "time": "2023-05-17T15:27:36+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "botfire/botfire": 0
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.3.0"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.3.0"
+}
