@@ -56,7 +56,6 @@ class IndexController
     bot::token($this->token);
     bot::autoInput();
 
-    bot::this()->message('Updating')->send();
     File::source('routes', ['Bot.php']);
   }
 
